@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <main http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Portfolio</title>
+        <link rel="stylesheet" href="style.css">    
+        <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    </head>
+    <body>
+        <header class="header">
+            <a href="#" class="logo">Portfolio</a>
+    
+            <nav class="navbar">
+                <a href="index.html">Home</a>
+                <a href="about.html">About</a>
+                <a href="skill.html">Skills</a>
+                <a href="contact.html">Contact</a>
+            </nav>
+        </header>
+        <section class="home">
+            <div class="home-content">
+                <h3>Hello, It's Me</h3>
+                <h1>Ayush Mehta</h1>
+                <h3>And I'm a<span class="text"></span></h3>
+                <p>I'm a high school student who is persuing computer science as it is my favourite subject.I love coding related stuff and i love making short run programes.</p>
+                <div class="home-sci">
+                    <a href="https://www.facebook.com/profile.php?id=100028686070852&mibextid=ZbWKwL"><i class='bx bxl-facebook'></i></a>
+                    <a href="https://www.instagram.com/ayush_mehta5?igsh=MXh1MHd6a3oxd2U1MA=="><i class='bx bxl-instagram' ></i></a>
+                    <a href="https://x.com/mehta_ayus56731?t=9nKGfxbT_gmSQPOuss2S8A&s=09"><i class='bx bxl-twitter' ></i></a>
+                    <a href="https://wa.me/qr/TDRIXXMDWV4ZG1 "><i class='bx bxl-whatsapp' ></i></a>
+                </div> 
+                <a href="#" class="btn-box">More About Me</a>  
+            </div>
+
+            <div class="home-imghover"></div>
+        </section>
+        
+        <section class="about" id="about">
+            <h2 class="heading">About<span>Me</span></h2> 
+            
+            <div class="about-img">
+                <img src="ayush.png" alt="">
+                <span class="circle-spin"></span>
+            </div>
+
+            <div class="about-content">
+                <h3>Fronted Developer!</h3>
+                <p>I'm a high school student who is persuing computer science as it is my favourite subject.I love coding related stuff and i love making short run programes.
+                    My hobby is to play cricket in free time.And id gain knowledge about stock market.</p>
+
+                <div class="btn-box btns">
+                    <a href="#" class="btn">Read More</a>
+                </div>
+            </div>
+        </section>
+        
+        <section class="skills" id="skills">
+            <h2 class="heading">My <span>skills</span></h2>
+
+            <div class="skills-row">
+                <div class="skills-column">
+                    <h3 class="title">Coding Skills</h3>
+                    
+                    <div class="skills-box">
+                        <div class="skills-content">
+                            <div class="progress">
+                                <h3>HTML <span>90%</span></h3>
+                                <div class="bar"><span></span></div>
+                            </div>
+
+                            <div class="progress">
+                                <h3>CSS <span>90%</span></h3>
+                                <div class="bar"><span></span></div>
+                            </div>
+
+                            <div class="progress">
+                                <h3>Javascript <span>90%</span></h3>
+                                <div class="bar"><span></span></div>
+                            </div>
+
+                            <div class="progress">
+                                <h3>Php <span>90%</span></h3>
+                                <div class="bar"><span></span></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skills-column">
+                    <h3 class="title">Professional Skills</h3>
+                    
+                    <div class="skills-box">
+                        <div class="skills-content">
+                            <div class="progress">
+                                <h3>Creativity <span>90%</span></h3>
+                                <div class="bar"><span></span></div>
+                            </div>
+
+                            <div class="progress">
+                                <h3>Communication <span>90%</span></h3>
+                                <div class="bar"><span></span></div>
+                            </div>
+
+                            <div class="progress">
+                                <h3>Problemsolving <span>90%</span></h3>
+                                <div class="bar"><span></span></div>
+                            </div>
+
+                            <div class="progress">
+                                <h3>Teamwork <span>90%</span></h3>
+                                <div class="bar"><span></span></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="contact" id="contact">
+            <div class="container">
+                <h2>Contact Me</h2>
+                <form id="contactForm">
+                  <label for="name">Name</label>
+                  <input type="text" id="name" name="name" required>
+            
+                  <label for="email">Email</label>
+                  <input type="text" id="email" name="email" required>
+            
+                  <label for="message">Message</label>
+                  <textarea id="message" name="message" required></textarea>
+            <br><br>
+                  <input type="submit" value="Submit">
+                </form>
+              </div>
+            
+              <script>
+                document.getElementById("contactForm").addEventListener("submit", function (event) {
+                  event.preventDefault();
+                  var name = document.getElementById("name").value;
+                  var email = document.getElementById("email").value;
+                  var message = document.getElementById("message").value;
+                  console.log("Name: " + name);
+                  console.log("Email: " + email);
+                  console.log("Message: " + message);
+                  document.getElementById("name").value = "";
+                  document.getElementById("email").value = "";
+                  document.getElementById("message").value = "";
+                });
+              </script>  
+        </section>
+        <script src="js/main.js"></script>
+    </body>
+
+</html>
